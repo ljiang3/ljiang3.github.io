@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hw2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 2 for JavaScript, jQuery, AJAX course at CCSF">
+    <title>CNIT 133 Homework 2 - Basic Operations</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="../scripts/hw2/part2.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="hw2.html">CNIT 133 Homework 2 - Basic Operations</a></h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw2.html" class="nav-btn">HW2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="extraCredit.html" class="nav-btn">Extra Credit</a></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <article class="hw2">
+        <div class="container">
+            <div class="part2-form">
+                <p style="font-size: 18px; text-align: center;"><strong>Please enter 3 Integers
+                        below:</strong></p>
+                <form>
+                    <div class="part2-form-item">
+                        <label for="num1">First Number: </label>
+                        <input type="number" id="num1" name="num1">
+                    </div>
+                    <div class="part2-form-item"> <label for="num2">Second Number: </label>
+                        <input type="number" id="num2" name="num2">
+                    </div>
+                    <div class="part2-form-item"> <label for="num3">Third Number: </label>
+                        <input type="number" id="num3" name="num3">
+                    </div>
+                    <div class="part2-form-item"><label for="result">Result: </label><br>
+                        <textarea id="result" name="result" rows="8" cols="50"></textarea>
+                    </div>
+                    <div class="part2-form-item">
+                        <input style="width: 120px; height: 30px; font-size: 16px; margin: 20px 10px;" type="button" onclick="getResult()"
+                            class="removeFade" value="Submit">
+                        <input style="width: 120px; height: 30px; font-size: 16px; margin: 20px 10px;" type="reset" class="removeFade" value="Reset">
+                        <input style="width: 120px; height: 30px; font-size: 16px; margin: 20px 10px;" type="button" id="fade" value="Fade Result">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </article>
+    <footer>© Copyright 2023 - Liyao Jiang </footer>
+</body>
+
+</html>
