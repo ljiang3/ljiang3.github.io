@@ -1,9 +1,9 @@
 function getResult() {
     let sum = 0, average = 0, product = 0, smallest, largest, result;
 
-    let num1 = parseInt(document.getElementById("num1").value);
-    let num2 = parseInt(document.getElementById("num2").value);
-    let num3 = parseInt(document.getElementById("num3").value);
+    num1 = parseInt(document.getElementById("num1").value);
+    num2 = parseInt(document.getElementById("num2").value);
+    num3 = parseInt(document.getElementById("num3").value);
 
     if (isNaN(num1) || isNaN(num2) || isNaN(num3) || num1 == "" || num2 == "" || num3 == "") {
         result = "Error! Inputs can't be empty and must be all numbers!";
