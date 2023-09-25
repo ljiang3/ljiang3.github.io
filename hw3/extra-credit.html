@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hw3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 3 for JavaScript, jQuery, AJAX course at CCSF">
+    <title>CNIT 133 Homework 3 - Functions</title>
+    <script async src="../scripts/hw3/extra-credit.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="hw2.html">CNIT 133 Homework 3 - Functions</a></h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw3.html" class="nav-btn">HW3</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="extra-credit.html" class="nav-btn">Extra Credit</a></div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <article class="hw3 extra-credit">
+        <div class="container">
+            <h2 class="text-center">How much is X times Y?</h2>
+            <p class="text-center"><b>Instructions:</b> <br>1. Click X and Y to generate the numbers between 0 -
+                9<br>2.Enter
+                your
+                answer in
+                the result box and hit the submit button to check your result</p>
+            <form>
+                <div class="multiplication-box">
+
+                    <div class="box-item">
+                        <p id="box-x">X</p>
+                    </div>
+                    <div class="box-item">
+                        <p class="operator">*</p>
+                    </div>
+                    <div class="box-item">
+                        <p id="box-y">Y</p>
+                    </div>
+                    <div class="box-item">
+                        <p class="operator">=</p>
+                    </div>
+                    <div class="box-item">
+                        <input type="number" id="multiplication-result" name="result" placeholder="Result">
+                    </div>
+                </div>
+                <div class="box-item">
+                    <input class="form-btn" type="button" id="submit" value="Submit">
+                    <input class="form-btn" type="reset" id="reset" value="Reset">
+                </div>
+                <p id="alert" class="text-center"></p>
+        </div>
+        </form>
+
+        <div id="prompt-modal">
+            <div class="modal-content" id="modal-correct">
+                <div class="modal-inner-content">
+                    <p>Very good!</p>
+                    <p>Do you want to play again?</p>
+                    <table>
+                        <tr>
+                            <tb>
+                                <input class="form-btn" type="button" id="play" value="YES" name="playBtn">
+                                <input class="form-btn" type="button" id="end" value="NO" name="playBtn">
+                            </tb>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="modal-content" id="modal-wrong">
+                <div class="modal-inner-content">
+                    <p>No. Please try again.</p>
+                    <input class="form-btn" type="button" id="try-again" value="Try Again">
+                </div>
+            </div>
+            <div class="modal-content" id="modal-finish">
+                <div class="modal-inner-content">
+                    <p>Thanks for playing, see you next time!</p>
+                </div>
+            </div>
+        </div>
+
+    </article>
+    <footer>© Copyright 2023 - Liyao Jiang </footer>
+</body>
+
+
+</html>

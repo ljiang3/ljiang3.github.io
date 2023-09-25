@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hw3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 3 for JavaScript, jQuery, AJAX course at CCSF">
+    <title>CNIT 133 Homework 3 - Functions</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script async src="../scripts/hw3/part2.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="hw2.html">CNIT 133 Homework 3 - Functions</a></h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw3.html" class="nav-btn">HW3</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="extra-credit.html" class="nav-btn">Extra Credit</a></div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <article class="hw3">
+        <div class="container">
+            <div class="hw-form">
+                <h2>Homework3 - Part2</h2>
+                <form>
+                    <div class="form-item">
+                        <label for="seller-name">Seller's Name: </label>
+                        <input type="text" id="seller-name" title="Seller Name">
+                    </div>
+                    <p>For each item type the quantity sold by the seller</p>
+                    <div class="form-item">
+                        <label for="item1">Item1: </label>
+                        <input type="number" id="item1" name="item1">
+                    </div>
+                    <div class="form-item">
+                        <label for="item2">Item2: </label>
+                        <input type="number" id="item2" name="item2">
+                    </div>
+                    <div class="form-item">
+                        <label for="item3">Item3: </label>
+                        <input type="number" id="item3" name="item3">
+                    </div>
+                    <div class="form-item">
+                        <label for="item4">Item4: </label>
+                        <input type="number" id="item4" name="item4">
+                    </div>
+                    <div class="form-item">
+                        <input class="form-btn" type="button" id="submit" value="Submit">
+                        <br>
+                        <input class="form-btn" type="reset" id="reset" value="Clear Form">
+                    </div>
+
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Item#</th>
+                                    <th>Price</th>
+                                    <th>Qty Sold</th>
+                                    <th>Total $</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Item1</td>
+                                    <td id="item1-price">$20.99</td>
+                                    <td><input class="input-right" type="text" id="item1-sold" name="item1-sold"
+                                            readonly>
+                                    </td>
+                                    <td> <input class="input-right" type="text" id="item1-total" name="item1-total"
+                                            readonly></td>
+                                </tr>
+                                <tr>
+                                    <td>Item2</td>
+                                    <td id="item2-price">$12.75</td>
+                                    <td><input class="input-right" type="text" id="item2-sold" name="item2-sold"
+                                            readonly>
+                                    </td>
+                                    <td><input class="input-right" type="text" id="item2-total" name="item2-total"
+                                            readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>item3</td>
+                                    <td id="item3-price">$9.95</td>
+                                    <td><input class="input-right" type="text" id="item3-sold" name="item3-sold"
+                                            readonly>
+                                    </td>
+                                    <td><input class="input-right" type="text" id="item3-total" name="item3-total"
+                                            readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Item4</td>
+                                    <td id="item4-price">$35.89</td>
+                                    <td> <input class="input-right" type="text" id="item4-sold" name="item4-sold"
+                                            readonly>
+                                    </td>
+                                    <td><input class="input-right" type="text" id="item4-total" name="item4-total"
+                                            readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" scope="row">Total Amount Sold</td>
+                                    <td> <input class="input-right" type="text" id="total-sold" name="total-sold"
+                                            readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" scope="row">Total Weekly Earnings</td>
+                                    <td> <input class="input-right" type="text" id="total-earnings"
+                                            name="total-earnings" readonly></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </article>
+    <footer>© Copyright 2023 - Liyao Jiang </footer>
+</body>
+
+
+</html>
