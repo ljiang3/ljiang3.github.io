@@ -5,6 +5,7 @@ body {
 
 body p {
     font-size: 16px;
+    line-height: 1.5;
 }
 
 header {
@@ -129,17 +130,67 @@ a:hover {
     margin-right: auto;
 }
 
-.part2-form textarea {
-    width: 100%;
+.text-center{
+    text-align: center;
 }
 
-.part2-form {
+/* Form Style */
+.hw-form {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
 }
 
-.part2-form-item {
+.form-item {
     padding: 10px 0;
+}
+
+.form textarea {
+    width: 100%;
+}
+
+.form-btn {
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+form {
+    border: 1px solid #ad76b1;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.input-right {
+    text-align: right;
+}
+
+/* Table Style */
+.container table {
+    border-collapse: collapse;
+}
+
+.container th,
+.container td {
+    border: 1px solid #ad76b1;
+    padding: 8px;
+}
+
+.container table input{
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    article {
+        height: 1200px;
+    }
+
+    .hw-main {
+        height: auto;
+    }
+
+    .container table input{
+        width: auto;
+    }
 }

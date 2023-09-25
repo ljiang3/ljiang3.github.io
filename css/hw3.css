@@ -1,0 +1,112 @@
+#result {
+    border: 1px solid #858585;
+    max-width: 100%;
+    height: 100px;
+    background-color: #fff;
+    padding: 5px;
+    margin: 2px 0;
+    overflow-wrap: break-word;
+}
+
+.warning {
+    color: red;
+}
+
+/* style for extra credit file */
+.multiplication-box {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-item {
+    flex: 0 0 15%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#box-x,
+#box-y {
+    /* border: 1px solid #ad76b1; */
+    font-size: 68px;
+    padding: 20px 40px;
+    background-color: #e8d6e4;
+}
+
+.operator {
+    font-size: 70px;
+}
+
+#multiplication-result {
+    font-size: 56px;
+    text-align: center;
+    width: 100%;
+    height: 140px;
+}
+
+::placeholder {
+    color: #ad76b1;
+    opacity: 0.3;
+}
+
+.extra-credit .form-btn {
+    margin: 10px 20px;
+}
+
+#prompt-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: #e8d6e4;
+}
+
+.modal-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    padding: 60px;
+    transform: translate(-50%, -50%);
+    background-color: #ad76b1;
+    color: #fff;
+    border-radius: 10px;
+   
+}
+
+.modal-content p {
+    font-size: 24px;
+}
+
+.modal-inner-content{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .hw3-main {
+        height: auto;
+    }
+
+    #result {
+        width: 310px;
+    }
+
+    .modal-content {
+        width: 500px;
+    }
+
+}

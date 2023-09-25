@@ -1,19 +1,5 @@
-
 .part1 {
     text-align: center;
-}
-
-.extra-credit table,
-.hw2-main table {
-    border-collapse: collapse;
-}
-
-.extra-credit th,
-.extra-credit td,
-.hw2-main th,
-.hw2-main td {
-    border: 1px solid #ad76b1;
-    padding: 8px;
 }
 
 .show-hide{
@@ -25,9 +11,4 @@
     width: 95%;
 }
 
-@media screen and (min-width: 768px){
-    .hw2 {
-        height: 800px;
-    }
-}
     
