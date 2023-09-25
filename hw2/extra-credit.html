@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hw2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 2 for JavaScript, jQuery, AJAX course at CCSF">
+    <title>CNIT 133 Homework 2 - Basic Operations</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="../scripts/hw2/extra-credit.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="hw2.html">CNIT 133 Homework 2 - Basic Operations</a></h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw2.html" class="nav-btn">HW2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="extra-credit.html" class="nav-btn">Extra Credit</a></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <article class="hw2">
+        <div class="container extra-credit">
+            <div class="show-hide">
+                <button id="show-hide-btn" style="height: 30px; font-size: 16px;">Click to Show/Hide Instructions</button>
+            
+                <div id="currency-table">
+                    <p><b><i>The foreign exchange rates in June 2021</i></b></p>
+                    <table class="center">
+                        <tr>
+                            <th colspan="3" scope="row">Monetary Exchange Rates</th>
+                        </tr>
+                        <tr>
+                            <th>Currency</th>
+                            <th>Rate</th>
+                        </tr>
+                        <tr>
+                            <td>Euro</td>
+                            <td>0.84</td>                          
+                        </tr>
+                        <tr>
+                            <td>Canadian Dollar</td>
+                            <td>1.23</td>                          
+                        </tr>
+                        <tr>
+                            <td>Hong Kong Dollar</td>
+                            <td>7.76</td>                         
+                        </tr>
+                        <tr>
+                            <td>Japanese Yen</td>
+                            <td>110.80</td>                           
+                        </tr>
+                        <tr>
+                            <td>Mexico Peso</td>
+                            <td>19.82</td> 
+                        </tr>
+                        <tr>
+                            <th colspan="2" scope="row">Enter Amount of U.S. Dollars</th>
+                            
+                        </tr>
+                    </table>
+                    <p><b><i>* * * Enter a dollar amount in the table below to see the corresponding foreign exchange values * * * </i></b></p>
+                </div>
+            </div>
+           
+            <form>
+                <table class="center">
+                    <tr>
+                        <th colspan="3" scope="row">Monetary Exchange Rates</th>
+                    </tr>
+                    <tr>
+                        <th>Value</th>
+                        <th>Rate</th>
+                        <th>Value</th>
+                    </tr>
+                    <tr>
+                        <td>Euro</td>
+                        <td id="euroRate">0.84</td>
+                        <td><input style="text-align:right" type="text" id="euroValue" name="euroValue" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Canadian Dollar</td>
+                        <td id="canRate">1.23</td>
+                        <td><input style="text-align:right" type="text" id="canValue" name="canValue" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hong Kong Dollar</td>
+                        <td id="hkRate">7.76</td>
+                        <td><input style="text-align:right" type="text" id="hkValue" name="hkValue" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Japanese Yen</td>
+                        <td id="japRate">110.80</td>
+                        <td><input style="text-align:right" type="text" id="japValue" name="japValue" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mexico Peso</td>
+                        <td id="mexRate">19.82</td>
+                        <td><input style="text-align:right" type="text" id="mexValue" name="mexValue" readonly>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" scope="row">Enter Amount of U.S. Dollars</th>
+                        <td><input style="text-align:right" type="text" id="userAmount" name="userAmount"></td>
+                    </tr>
+
+                </table>
+                <div style="text-align: center; padding-top: 20px;">
+                    <input style="width: 120px; height: 30px; font-size: 16px; margin: 20px 10px;" type="button" onclick="exchange()" value="Submit">
+                    <input id="remove-bg" style="width: 120px; height: 30px; font-size: 16px; margin: 20px 10px;" type="reset" value="Reset">
+                </div>
+            </form>
+
+        </div>
+
+    </article>
+    <footer>© Copyright 2023 - Liyao Jiang </footer>
+</body>
+
+</html>
