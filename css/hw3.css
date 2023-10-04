@@ -8,10 +8,6 @@
     overflow-wrap: break-word;
 }
 
-.warning {
-    color: red;
-}
-
 /* style for extra credit file */
 .multiplication-box {
     display: flex;

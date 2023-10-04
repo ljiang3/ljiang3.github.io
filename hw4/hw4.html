@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 4 for JavaScript, jQuery, AJAX course at CCSF">
+    <title>CNIT 133 Homework</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="hw4.html">CNIT 133 Homework 4 - Looping Statements</a></h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw4.html" class="nav-btn">HW4</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="extra-credit.html" class="nav-btn">Extra Credit</a></div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <article class="hw-main hw4">
+        <div class="container">
+            <h2>Homework4 Description</h2>
+            <p><strong><span style="font-size: 14pt; background-color: #ffff00;">DO NOT USE ALERT BOXES FOR ERROR
+                        MESSAGES OR RESULTS!</span></strong></p>
+            <!-- Part1 -->
+            <h3>Part1</h3>
+            <p><span>Create a webpage for Part 1 and it will contain a script, <strong>using the<span
+                            class="Apple-converted-space">&nbsp;</span>for looping statement</strong>, that calculates
+                    the <strong>product</strong> and <strong>sum</strong> of <strong>every fourth integer from 5 to 25
+                        inclusive</strong> and then displays the results, along with some accompanying text.</span></p>
+            <p>For example, when presenting the results, you could show two lines such as:<br><em><strong>The result of
+                    </strong></em><span><em><strong>5 * 9 * 13 * 17 * 21 * 25 is ....</strong></em><br><em><strong>The
+                            result of 5 + 9 + 13 + 17 + 21 + 25 is ....</strong></em><span
+                        class="Apple-converted-space">&nbsp;</span></span><span><br><br>On that same web page for Part
+                    1, you will have another script, now <strong>using the while or do while<span
+                            class="Apple-converted-space"> looping </span>statement</strong>, that calculates the
+                    <strong>product</strong> and <strong>sum</strong> of <strong>every third integer from 3 to 18
+                        inclusive</strong> and then displays the results, along with some accompanying text.</span></p>
+            <p>For example, when presenting the results, you could show two lines such as:<br><em><strong>The result of
+                        3 * 6 * 9 * 12 * 15 * 18 is ....<br>The result of 3 + 6 + 9 + 12 + 15 + 18 is ....</strong></em>
+            </p>
+            <p>You should use <em><strong>toLocaleString()</strong></em> to present the result with the
+                correct punctuation - remember that it is really bad for users to read a big number such as
+                1342658 instead of reading as 1,342,658 that shows the separation of the thousands.<br><br>On
+                that same web page, you will use jQuery UI to allow the user to drag an element to any area of
+                the page - can be any type of element. For more on jQuery UI draggable see <a
+                    href="http://jqueryui.com/draggable/" target="_blank" rel="noreferrer noopener">the
+                    example in this
+                    page</a></p>
+
+            <a href="part1.html"><b>Part1 Solution</b></a>
+            <!-- Part2 -->
+            <h3>Part2</h3>
+            <p><span>You will create a web page to show to interested clients how the compound interest works.</span>
+            </p>
+            <p><span>As soon as you open that web page on the browser to the client, it will have a heading such as
+                    "<em><strong>Learn about compound interest</strong></em>"</span></p>
+            <p><span>Below the heading you will code a script to show 3 tables with the calculation of compound interest
+                    on a principal of <strong>$1000</strong>. </span></p>
+            <ul>
+                <li><span>The first table will be for the interest rate of <strong>5%</strong></span></li>
+                <li><span>The second table will be for the interest rate of <strong>6%</strong></span></li>
+                <li><span>The third table will be for the interest rate of <strong>7%</strong></span></li>
+            </ul>
+            <p><span>Each of the tables will show the rows <strong>from year 1 through 5</strong>. </span></p>
+            <p><span>The formula to calculate the compound interest is: <strong>A = P(1 + r)<sup>n</sup></strong><span></span>
+                        where:</span></span></p>
+            <ul>
+                <li><span><strong>P</strong> is the principal (the initial amount you borrow or deposit) </span></li>
+                <li><span><strong>r</strong> is the annual rate of interest (percentage) that, <strong>for 5% for
+                            example, would be 0.05</strong></span></li>
+                <li><span><strong>n</strong> is the number of years the amount is deposited</span></li>
+                <li><span><strong>A</strong> is the amount of money accumulated after n years, including interest</span>
+                </li>
+            </ul>
+            <p><span>The table will look like what is shown here below (the table below is showing only the first 4
+                    years and for only the 5% interest rate):</span></p>
+            <ul>
+                <li><span>The first column will have the <strong>number for the year</strong></span></li>
+                <li><span>The second column will have the <strong>Amount calculated</strong>, based on that formula for
+                        that year</span></li>
+                <li><span>The third column will have the <strong>interest rate</strong> that is being
+                        used</span><br><br></li>
+            </ul>
+            <table>
+                <caption style="display: none;">Example amount and rate table</caption>
+                <tbody>
+                    <tr style="background-color: maroon; color: white;">
+                        <th scope="row">Year</th>
+                        <th scope="row">Amount on deposit</th>
+                        <th scope="row">Interest Rate</th>
+                    </tr>
+                    <tr style="background-color: #ff7f50;">
+                        <td style="border: 1px dotted gray;">1</td>
+                        <td style="border: 1px dotted gray;">1050.00</td>
+                        <td style="border: 1px dotted gray;">0.05</td>
+                    </tr>
+                    <tr style="background-color: yellow;">
+                        <td style="border: 1px dotted gray;">2</td>
+                        <td style="border: 1px dotted gray;">1102.50</td>
+                        <td style="border: 1px dotted gray;">0.05</td>
+                    </tr>
+                    <tr style="background-color: #ff7f50;">
+                        <td style="border: 1px dotted gray;">3</td>
+                        <td style="border: 1px dotted gray;">1157.63</td>
+                        <td style="border: 1px dotted gray;">0.05</td>
+                    </tr>
+                    <tr style="background-color: yellow;">
+                        <td style="border: 1px dotted gray;">4</td>
+                        <td style="border: 1px dotted gray;">1215.51</td>
+                        <td style="border: 1px dotted gray;">0.05</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><span>There is <span style="background-color: #fff060;"><strong>NO INPUT</strong></span> for this
+                    problem! The 3 tables (one for 5%, another for 6% and another for 7%) should be shown as soon as the
+                    page is opened (loaded in the browser). </span></p>
+            <p><span><span style="font-size: 14pt; background-color: #fff060;"><strong>IMPORTANT TIP:</strong></span>
+                    The more efficient way to resolve this problem is to make one loop inside the other (nested loop).
+                    It is not ok if you set the 3 tables first and then loop to write only the results on the tables!
+                    Think about future maintenance - for example, if the company requests to show one more table for
+                    another interest rate, or if it is requested to present 10 years, instead of 5 for each interest
+                    rate. The less places you have to modify, the better your code is considered. So, use nested
+                    loop</span></p>
+            <p><span><span style="background-color: #fff060; font-size: 14pt;"><strong>MORE FOR THIS
+                            TIP:</strong></span> the outside loop should be for the interest rate that will start a new
+                    table tag and the top part of the table (table headings), then the internal loop should be for each
+                    year to build the rows of that table!</span></p>
+            <p><span>You should use jQuery or CSS to alternate the background colors of the rows - whatever colors you
+                    want - it does not need to follow the format shown here<br><span
+                        style="background-color: #fff060;"><strong>TIP:</strong></span> If using CSS, you can think
+                    about <strong>nth-of-child</strong> pseudo-class for the <strong>tr</strong> tag!</span></p>
+            <p>For more information on calculating compound interest, <a
+                    href="http://math.about.com/library/weekly/aa042002a.htm" target="_blank">see this link</a>.</p>
+
+            <a href="part2.html"><b>Part2 Solution</b></a>
+
+            <!-- Extra Credit -->
+            <h3><span style="font-size: 18pt;"><strong>Extra Credit</strong></span></h3>
+            <ul>
+                <li>Create a webpage with:
+                    <ul>
+                        <li>a heading</li>
+                        <li>a form with an input box that will allow the user to enter a number (integer), a button to
+                            process the script, and a button to clear the form</li>
+                        <li>a separated div or paragraph element below the form where you will present the result</li>
+                    </ul>
+                </li>
+                <li>You will build a script that:
+                    <ul>
+                        <li>Will read the number typed by the user that should be between 2 and 10</li>
+                        <li>Based on that number, you will display a hollow square with that size constructed of
+                            asterisks.</li>
+                        <li>If the user entered an invalid number (not a number or outside the range of 2 to 10), you
+                            should present an error message in the div or paragraph element below the form and you
+                            should NOT present the square!</li>
+                        <li>If the user entered a valid number, you should present the hollow square in. the div or
+                            paragraph element below the form</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4><span style="background-color: #fff060;"><strong>TIPS: </strong></span></h4>
+            <ul>
+                <li>Be sure that the output looks like a square as a common error is having the top and bottom row of
+                    asterisks appear to be smaller than the sides.</li>
+                <li>Use nested<span><span class="Apple-converted-space">&nbsp;</span>while </span>or<span>
+                        for</span><span class="Apple-converted-space">&nbsp;</span>statements and follow the final note
+                    below when presenting the asterisks to compose the sides of the square</li>
+            </ul>
+            <h4><span style="background-color: #fff060;"><span
+                        style="font-size: 14pt; background-color: #fff060;"><strong>Final Note:</strong></span> </span>
+            </h4>
+            <p>There should be <strong>NO ASTERISKS (*)</strong> inside the square - it should be a hollow square like
+                the image below (notice that there is a space between each * printed asterisk at the top and the bottom
+                of the square which you do not need to provide when printing the asterisks of the side of the square as
+                the browser already provides a space between each line):</p>
+            <p><img src="../image/squareLoopingAssignment.png" alt="hollow square for extra credit"></p>
+
+            <a href="extra-credit.html"><b>Extra Credit Solution</b></a>
+    </article>
+    <footer>© Copyright 2023 - Liyao Jiang </footer>
+</body>
+
+</html>

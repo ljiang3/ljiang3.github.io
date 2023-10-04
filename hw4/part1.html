@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hw4.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 4 for JavaScript, jQuery, AJAX course at CCSF">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>CNIT 133 Homework</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="hw4.html">CNIT 133 Homework 4 - Looping Statements</a></h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw4.html" class="nav-btn">HW4</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="extra-credit.html" class="nav-btn">Extra Credit</a></div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <article>
+        <div class="container text-center">
+            <div class="ui-widget-content" id="draggable">
+                <p style="color: #ad76b1; font-size: 20px;"><b>DRAG ME AROUND</b></p>
+
+                <h3>Part1</h3>
+                <script>
+                    let product1 = 1, sum1 = 0;
+                    for (let i = 5; i <= 25; i += 4) {
+                        product1 *= i;
+                    }
+                    document.write("1. The result of 5 * 9 * 13 * 17 * 21 * 25 is " + product1.toLocaleString());
+                    document.write("<p style='margin: 10px 0;'>");
+
+                    for (let i = 5; i <= 25; i += 4) {
+                        sum1 += i;
+                    }
+                    document.write("2. The result of 5 + 9 + 13 + 17 + 21 + 25 is " + sum1.toLocaleString());
+                    document.write("<p style='margin: 10px 0;'>");
+                </script>
+
+                <script>
+                    let product2 = 1, i = 3;
+                    while (i <= 18) {
+                        product2 *= i;
+                        i = i + 3;
+                    }
+                    document.write("3. The result of 3 * 6 * 9 * 12 * 15 * 18 is " + product2.toLocaleString());
+                    document.write("<p style='margin: 10px 0;'>");
+
+                    let sum2 = 0, j = 0;
+                    do {
+                        sum2 += j;
+                        j = j + 3;
+                    } while (j <= 18);
+
+                    document.write("4. The result of 3 + 6 + 9 + 12 + 15 + 18 is " + sum2.toLocaleString());
+                    document.write("<p style='margin: 10px 0;'>");
+                </script>
+
+                <script>
+                    $(function () {
+                        $("#draggable").draggable();
+                    });
+                </script>
+            </div>
+        </div>
+    </article>
+    <footer>© Copyright 2023 - Liyao Jiang </footer>
+</body>
+
+</html>

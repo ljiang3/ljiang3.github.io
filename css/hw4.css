@@ -1,0 +1,39 @@
+#draggable {
+    border: 1px solid #ad76b1;
+    padding: 20px 0;
+}
+
+
+.part2 {
+    background-color: #fff;
+    padding: 20px 0 60px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.extra-credit{
+    padding: 80px;
+}
+
+.table-head {
+    background-color: #ad76b1;
+    color: #fff;
+    text-align: center;
+}
+
+.table-data-odd{
+    background-color:#e8d6e4;
+    text-align: center;
+}
+
+.table-data-even{
+    background-color:#d4b7d6;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .hw4 {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
