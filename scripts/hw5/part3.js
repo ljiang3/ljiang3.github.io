@@ -13,7 +13,7 @@ let output = document.getElementById("output");
 let stateCensus = "";
 
 submit.addEventListener("click", function () {
-    let stateName = document.getElementById("stateName").value.toLowerCase().trimEnd();
+    let stateName = document.getElementById("stateName").value.toLowerCase().trimStart().trimEnd();
     if (stateName === "") {
         output.innerText = "Please enter a state abbreviation or full name!";
         output.classList.add("warning");
