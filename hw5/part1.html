@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hw5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 5 for JavaScript, jQuery, AJAX course at CCSF">
+    <title>CNIT 133 Homework</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jQuery Validation of inputs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+    <script async src="../scripts/hw5/part1.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>CNIT 133 Homework 5 - Arrays</h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw5.html" class="nav-btn">HW5</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part3.html" class="nav-btn">Part3</a></div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <article>
+        <div class="container">
+            <h2 class="text-center">Part1: Validate form inputs with jQuery</h2>
+            <div class="hw-form">
+                <form class="part1" id="part1Form">
+                    <div class="form-item">
+                        <label for="fullName">1. Full Name: </label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div class="form-item">
+                        <p>2. Please select your age: </p>
+                        <input type="radio" id="age1" name="age" value="&lt; 21">
+                        <label for="age1">&lt; 21</label><br>
+                        <input type="radio" id="age2" name="age" value="21 - 50">
+                        <label for="age2">21 - 50</label><br>
+                        <input type="radio" id="age3" name="age" value="&gt; 50">
+                        <label for="age3">&gt; 50</label>
+                    </div>
+
+                    <div class="form-item">
+                        <p>3. Please select the browser you used: </p>
+                        <input type="checkbox" id="browser1" name="browser" value="firefox">
+                        <label for="browser1">Firefox</label><br>
+                        <input type="checkbox" id="browser2" name="browser" value="edge">
+                        <label for="browser2">Edge</label><br>
+                        <input type="checkbox" id="browser3" name="browser" value="chrome">
+                        <label for="browser3">Chrome</label><br>
+                        <input type="checkbox" id="browser4" name="browser" value="safari">
+                        <label for="browser4">Safari</label>
+                    </div>
+
+                    <div class="form-item"> <!-- Datalist or Select -->
+                        <p>4. Please select your preferred moive type: </p>
+                        <label for="movieType">Movie Type: </label>
+                        <select id="movieType" name="movieType">
+                            <option value="">--Please select one--</option>
+                            <option value="action">Action</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="drama">Drama</option>
+                            <option value="documentary">Documentary</option>
+                            <option value="science fiction">Science Fiction</option>
+                        </select>
+                    </div>
+
+                    <div class="form-item">
+                        <input class="form-btn" type="submit" value="Submit" id="submit">
+                        <input class="form-btn" type="reset" value="Reset" onclick="window.location.reload();">
+                    </div>
+
+                    <div class="form-item">
+                        <div id="output"></div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </article>
+</body>
+
+</html>

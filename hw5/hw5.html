@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 5 for JavaScript, jQuery, AJAX course at CCSF">
+    <title>CNIT 133 Homework</title>
+</head>
+
+<body>
+    <header>
+        <h1>CNIT 133 Homework 5 - Arrays</h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw5.html" class="nav-btn">HW5</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part3.html" class="nav-btn">Part3</a></div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <article class="hw-main">
+        <div class="container">
+            <h2>Homework3 Description</h2>
+            <!-- Part1 -->
+            <h3>Part1</h3>
+            <ul>
+                <li>Create a web page for part 1 with:
+                    <ul>
+                        <li>a heading</li>
+                        <li>a hyperlink to go back to the main Homework 5 page</li>
+                        <li>a form that will contain:</li>
+                        <li>an input text box so the user will enter his/her full name</li>
+                        <li>a group of radio buttons so the user will select his age group (less than 21; between 21 and
+                            50; older than 50)</li>
+                        <li>a group of checkboxes so the user will select the browsers he/she has used (Firefox, Edge,
+                            Chrome, Safari)<br><span style="background-color: #fff060;"><strong>TIP:</strong></span>
+                            when building <strong>radio buttons</strong> and <strong>checkboxes</strong> in HTML, make
+                            sure that the <strong>name</strong> attribute <strong>has the same value</strong> to all
+                            radio buttons in the group and <strong>the same value to all checkboxes</strong> in the
+                            group but, of course, the <strong>id</strong> attribute should have a different value for
+                            each element</li>
+                        <li>a select element or datalist (to produce a drop-down list of choices) so the user will
+                            select which type of movie he/she prefers (Action, Comedy, Drama, Documentary, Science
+                            Fiction)</li>
+                        <li>a button to submit the form</li>
+                        <li>a button to clear the form</li>
+                        <li>a div or paragraph element that will serve as the output/result area (it can be outside the
+                            form)</li>
+                    </ul>
+                </li>
+                <li>For that page, you will code a script that:
+                    <ul>
+                        <li>Will validate whether the user has entered data in the input text box, <strong>AND</strong>
+                            has checked one of the radio buttons, <strong>AND</strong> has checked at least one
+                            checkbox, <strong>AND</strong> has selected an option from the list of options in the select
+                            (or datalist) element.</li>
+                        <li>If one of the data, from the user, is missing, you will show an error message in the output
+                            area<br><span style="background-color: #fff060;"><strong>TIP:</strong></span>&nbsp;Make sure
+                            that if you display an error message because of a single field, you do not clear out the
+                            whole entire form unless all the fields would have error messages associated to them! It's
+                            horrible to have the user fill out all the form again when there was only one field with
+                            error, right? Remember about this type of detail that is related to user experience!</li>
+                        <li>If ALL the requested data was input by the user, you will write a message in the output area
+                            such as "<em><strong>Thanks, your data was submitted!</strong></em>"</li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="part1.html"><b>Part1 Solution</b></a>
+
+            <!-- Part2 -->
+            <h3>Part2</h3>
+            <ul>
+                <li>Create a web page for part 2 with:
+                    <ul>
+                        <li>a heading</li>
+                        <li>a hyperlink to go back to the main Homework 5 page</li>
+                        <li>2 pulldown menus:</li>
+                        <li>The first pulldown menu should utilize an <em><strong>onchange</strong></em> event handler.
+                        </li>
+                        <li>The second pulldown menu should utilize a button with an <em><strong>onclick</strong></em>
+                            event handler to navigate to a page after an option is selected.</li>
+                        <li>Each pulldown menu should include at least 3 URL destinations.&nbsp;</li>
+                    </ul>
+                </li>
+                <li>You will code a script for that page that, based on each pulldown menu, will open the selected
+                    website, but that selected website should open in ANOTHER TAB/WINDOW<br>&nbsp;</li>
+            </ul>
+            <a href="part2.html"><b>Part2 Solution</b></a>
+
+            <!-- Part3 -->
+            <h3>Part3</h3>
+            <p>The web page for part 3 and the script will be based on the table you see below that shows data about
+                several of our states from the July/2019 census!</p>
+            <ul>
+                <li>You will create a web page for part 3 with:
+                    <ul>
+                        <li>a heading</li>
+                        <li>a hyperlink so the user can go back to the main page of Homework 5</li>
+                        <li>a form with an input text box - the user will use that input box to type the full name of
+                            the state or the two-letter abbreviation of the state</li>
+                        <li>a button to submit the data</li>
+                        <li>a button to clear the form</li>
+                        <li>a textarea inside the form or a different element (div or paragraph) where you will write
+                            the output/result</li>
+                    </ul>
+                </li>
+                <li>You will write a script that:
+                    <ul>
+                        <li>The user will type the <strong>FULL NAME</strong> or <strong>ABBREVIATION</strong> of the
+                            state he/she desires to get information. After the user click the button to get "State
+                            Info", you will verify if the state typed by the user exists in your database<br><span
+                                style="background-color: #fff060;"><strong>INFORMATION:</strong></span> It should not
+                            matter if the user typed the state or abbreviation using capital letters or
+                            lowercase.<br><span style="background-color: #fff060;"><strong>TIP:</strong></span>
+                            Transform the input of the user and the data you are comparing to either to uppercase or to
+                            lowercase so you can compare "banana with banana"! Using the
+                            <em><strong>toLowerCase()</strong></em> or <em><strong>toUpperCase()</strong></em> methods.
+                        </li>
+                        <li>If the state does not exist, write a message in the output area saying something as
+                            "<strong>Sorry, we do not have information about this state! We only have information
+                                about.....</strong>" - remember to be clear in your error message to guide the user!
+                        </li>
+                        <li>If the state exists, you should present in the output/result area the information from the
+                            state required - think about presenting the information in a nice readable way!</li>
+                    </ul>
+                </li>
+                <h4><span style="background-color: #fff060;"><strong>More Tips:</strong></span></h4>
+                <ul>
+                    <li>Solving this problem involves a two-dimensional array.</li>
+                    <li>Make sure you validate the input for a correct state abbreviation or state name. If the input is
+                        invalid then display an error message.&nbsp;</li>
+                    <li>If the user enter a state that is not part of the list, show a message to the user but if the
+                        user retypes the state and click the Submit button and the state is valid, then the "error"
+                        message should not be shown and, instead, you should show the information that is coming from
+                        the table below</li>
+                </ul>
+            </ul>
+            <p>For example, suppose the user typed "<strong>caliFORNIA</strong>" (a mix or lower and uppercase),
+                your script will consider this state valid, would find the state in your list and would present an
+                output message looking something as:<br><em><strong>Thanks for your inquiry, here is the information
+                        you requested:</strong></em><br><em><strong>State abbr =
+                        CA</strong></em><br><em><strong>State Name = California</strong></em><br><em><strong>Capital
+                        = Sacramento</strong></em><br><em><strong>Population = 39,512,223</strong></em></p>
+            <p>Here is the table with the information for this part 3!</p>
+
+            <table>
+                <caption>Census data</caption>
+                <tbody>
+                    <tr>
+                        <th scope="row">State Abbr</th>
+                        <th scope="row">State Name</th>
+                        <th scope="row">Capital</th>
+                        <th scope="row">Population</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px dotted gray;">AL</td>
+                        <td style="border: 1px dotted gray;">Alabama</td>
+                        <td style="border: 1px dotted gray;">Montgomery</td>
+                        <td style="border: 1px dotted gray;" align="right"><span>4,903,185</span></td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px dotted gray;">AK</td>
+                        <td style="border: 1px dotted gray;">Alaska</td>
+                        <td style="border: 1px dotted gray;">Juneau</td>
+                        <td style="border: 1px dotted gray;" align="right"><span>731,545</span></td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px dotted gray;">AZ</td>
+                        <td style="border: 1px dotted gray;">Arizona</td>
+                        <td style="border: 1px dotted gray;">Phoenix</td>
+                        <td style="border: 1px dotted gray;" align="right"><span>7,278,717</span></td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px dotted gray;">AR</td>
+                        <td style="border: 1px dotted gray;">Arkansas</td>
+                        <td style="border: 1px dotted gray;">Little Rock</td>
+                        <td style="border: 1px dotted gray;" align="right"><span>3,017,825</span></td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px dotted gray;">CA</td>
+                        <td style="border: 1px dotted gray;">California</td>
+                        <td style="border: 1px dotted gray;">Sacramento</td>
+                        <td style="border: 1px dotted gray;" align="right"><span>39,512,223</span></td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px dotted gray;">CO</td>
+                        <td style="border: 1px dotted gray;">Colorado</td>
+                        <td style="border: 1px dotted gray;">Denver</td>
+                        <td style="border: 1px dotted gray;" align="right"><span>5,758,736</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a href="part3.html"><b>Part3 Solution</b></a>
+        </div>
+    </article>
+</body>
+
+</html>

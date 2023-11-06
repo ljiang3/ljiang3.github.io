@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hw5.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 5 for JavaScript, jQuery, AJAX course at CCSF">
+    <title>CNIT 133 Homework</title>
+    <script async src="../scripts/hw5/part2.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>CNIT 133 Homework 5 - Arrays</h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw5.html" class="nav-btn">HW5</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part3.html" class="nav-btn">Part3</a></div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <article>
+        <div class="container">
+            <h2 class="text-center">Part2: Form Pulldown Menus Used as Navigation Elements</h2>
+            <div class="hw-form">
+                <form class="part2" id="part2Form">
+                    <div class="form-item">
+                        <p>1. Use onchange event handler </p>
+                        <p>💜 Check News on your favorte News websites: </p>
+                        <label for="news1">News Websites: </label>
+                        <select id="news1" name="news1" onchange="openNewPage(this.form)">
+                        </select>
+                    </div>
+
+                    <div class="form-item">
+                        <p>2. Use onclick event handler </p>
+                        <p>💜 Check News on your favorte News websites: </p>
+                        <label for="news2">News Websites: </label>
+                        <select id="news2" name="news2">
+                        </select>
+                        <input type="button" value="Go" onclick="goToNewPage(this.form);">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>
