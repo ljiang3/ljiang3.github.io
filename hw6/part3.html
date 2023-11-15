@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hw6.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 6 for JavaScript, jQuery, AJAX course at CCSF">
+    <title>CNIT 133 Homework</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script async src="../scripts/hw6/part3.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>CNIT 133 Homework 6 - Objects</h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw6.html" class="nav-btn">HW6</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part3.html" class="nav-btn">Part3</a></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <article>
+        <div class="container">
+            <h2 class="text-center">Part3: Regular Expressions and Split() Function</h2>
+            <div class="hw-form">
+                <form>
+                    <div class="form-item">
+                        <label for="phoneNumber">Enter a phone number (Format:(999) 999-9999): </label><br><br>
+                        <input type="text" name="phoneNumber" id="phoneNumber">
+                    </div>
+                    <div class="form-item">
+                        <input class="form-btn" type="button" value="Process" id="process">
+                        <input class="form-btn" type="reset" value="Reset" onclick="window.location.reload();">
+                    </div>
+                    <div class="form-item">
+                        <div id="output"></div>
+                    </div>
+                    <div class="form-item">
+                        <label for="areaCode">Area Code: </label>
+                        <input type="text" name="areaCode" id="areaCode" readonly>
+                    </div>
+                    <div class="form-item">
+                        <label for="prefix">Prefix: </label>
+                        <input type="text" name="prefix" id="prefix" readonly>
+                    </div>
+                    <div class="form-item">
+                        <label for="lineNumber">Line Number: </label>
+                        <input type="text" name="lineNumber" id="lineNumber" readonly>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>

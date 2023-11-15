@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 6 for JavaScript, jQuery, AJAX course at CCSF">
+    <title>CNIT 133 Homework</title>
+</head>
+
+<body>
+    <header>
+        <h1>CNIT 133 Homework 6 - Objects</h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw6.html" class="nav-btn">HW6</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part3.html" class="nav-btn">Part3</a></div>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <article class="hw-main">
+        <div class="container">
+            <h2>Homework6 Description</h2>
+            <!-- Part1 -->
+            <h3>Part1</h3>
+            <ul>
+                <li>You will create a web page with
+                    <ul>
+                        <li>a heading that you can choose</li>
+                        <li>a form that will have:</li>
+                        <li>an input box for the user to enter a number with 4 decimals</li>
+                        <li>a button to submit the data</li>
+                        <li>a button to clear the form</li>
+                        <li>a textarea (or another element outside the form - div or paragraph) where you will write the
+                            output/result</li>
+                        <li>a hyperlink to go back to the main page of Homework 6</li>
+                    </ul>
+                </li>
+                <li>You will create a script to resolve the following:
+                    <ul>
+                        <li>After the user types the number in the input box and clicks on the button to submit, you
+                            need to <strong>make sure that the number has <span style="background-color: #fff060;">AT
+                                    LEAST 4 decimal positions</span> (no less than that)</strong></li>
+                        <li>If the user types an invalid number, you will display an error message in the output/result
+                            area</li>
+                        <li>If the user types a valid number (with 4 decimals and it is a number), you will use
+                            <strong>Math.round, Math.sqrt, Math.floor</strong>, <strong>toFixed()</strong> etc. to
+                            obtain the following:<br><span
+                                style="background-color: #fff060;"><strong>TIPS:</strong></span> <br>when reading the
+                            input, make sure you will be using <strong>parseFloat()</strong> to not lose the decimal
+                            numbers before doing the calculations requested<br>remember to use the
+                            <strong>toFixed()</strong> only at the time you will present the final result
+                            <ol style="list-style-type: upper-alpha;">
+                                <li>round the floating-point number to the nearest integer</li>
+                                <li>calculate the square root of the floating-point number and round it to an integer
+                                </li>
+                                <li>round the floating-point number to the nearest tenths position</li>
+                                <li>round the floating-point number to the nearest hundredths position</li>
+                                <li>round the floating-point number to the nearest thousandths position</li>
+                            </ol>
+                        </li>
+                        <li>You will then present in the output/result area the original number typed by the user and
+                            the results you found for each calculation requested above<br><br></li>
+                    </ul>
+                </li>
+            </ul>
+            <h4><strong>For example: </strong></h4>
+            <ul>
+                <li>If the user types <strong>4.32</strong>, you should not accept it, and you should write an error
+                    message such as: "<strong>You need to type a number with at least 4 decimals, please try
+                        again</strong>"</li>
+                <li>If the user types <strong>4.3264</strong>, you should then do the calculations and the output/result
+                    area would have something as:<br>"<em><strong>You typed number
+                            4.3264</strong></em><br><em><strong>Rounded to the nearest integer =
+                            4</strong></em><br><em><strong>Square root rounded to integer =
+                            2</strong></em><br><em><strong>Rounded to the nearest 10th position =
+                            4.3</strong></em><br><em><strong>Rounded to the nearest 100th position =
+                            4.33</strong></em><br><em><strong>Rounded to the nearest 1000th position =
+                            4.326</strong></em>"</li>
+            </ul>
+            <a href="part1.html"><b>Part1 Solution</b></a>
+
+            <!-- Part2 -->
+            <h3>Part2</h3>
+            <ul>
+                <li>You will create a web page with:
+                    <ul>
+                        <li>a heading that you can choose</li>
+                        <li>a form with:</li>
+                        <li>a textarea to allow the user to type a long content</li>
+                        <li>an input box to allow the user to type only one letter&nbsp;<br><span
+                                style="background-color: #fff060;"><strong>TIP:</strong></span> in HTML, you can
+                            restrict the number of characters the user will type by using the attribute
+                            <strong>maxlength</strong> in the input type="text" element
+                        </li>
+                        <li>an input box or textarea, or an element outside the form (a div or paragraph) to present the
+                            output/result</li>
+                        <li>a hyperlink to return to the main page of Homework 6</li>
+                    </ul>
+                </li>
+                <li>You will write a script <strong>using some Script methods you learned</strong>, to solve the
+                    following:
+                    <ul>
+                        <li>The user will type whatever content he/she wants in the textarea for the long content, and
+                            the user will also type a single character in the input box you provided. When the user
+                            clicks the submit button, you will:
+                            <ul>
+                                <li>Search for the character the user typed inside the content in the textarea and you
+                                    will count how many times this character is shown in the big content</li>
+                                <li>If the character <strong>is found</strong>, you will present a message in the
+                                    output/result area that says <strong>how many times the character X shows up in the
+                                        content</strong> where <strong>X</strong> is the single character typed by the
+                                    user</li>
+                                <li>If the character <strong>is not found</strong>, you will present a <strong>new
+                                        window</strong> (using the <strong>window.open()</strong> method you learned),
+                                    the message: "<em><strong>Search character X not found in the content you
+                                            typed</strong></em>", where <strong>X</strong> is the single character typed
+                                    by the user. <span style="background-color: #fff060;"><strong>You should also make
+                                            sure that, in this case, you will clear the input box or textarea that would
+                                            be presenting the result of a positive search</strong></span><br><span
+                                        style="background-color: #fff060;"><strong>NOTE:</strong></span> The new window
+                                    should be <strong>300 pixels</strong> by <strong>100 pixels</strong> (width by
+                                    height) and should be presented on a place that do not obscure any of the main
+                                    content on the page the user is working with - you will choose the best place
+                                    depending on your layout<br><span
+                                        style="background-color: #fff060;"><strong>TIP:</strong></span> when presenting
+                                    the new window, it will be GREAT, if you present a button that the user can click to
+                                    <strong>CLOSE</strong> that new window
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>IMPORTANT NOTES:</strong></p>
+            <p>Remember that <strong>it does not matter</strong> if the user types a lowercase letter to search - the
+                match should be done and accepted if the text contains the same letter either in lowercase or uppercase.
+                For example, <strong>letter "<span style="color: #e70909;">t</span>" would be found twice in this text
+                    "<span style="color: #e30b0b;">This time</span>"!</strong></p>
+            <p>For a tip on how to use the <strong>charAt()</strong> to count the number of occurrences of a character,
+                take a look at <a class="inline_disabled external"
+                    href="https://hills.ccsf.edu/~cdasilva/cnit133/objex3.html" target="_blank"
+                    rel="noreferrer noopener"><span>this page coded by the instructor</span><span
+                        class="external_link_icon"
+                        style="margin-inline-start: 5px; display: inline-block; text-indent: initial; "
+                        role="presentation"><svg viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"
+                            style="width:1em; height:1em; vertical-align:middle; fill:currentColor">
+                            <path
+                                d="M1226.667 267c88.213 0 160 71.787 160 160v426.667H1280v-160H106.667v800C106.667 1523 130.56 1547 160 1547h1066.667c29.44 0 53.333-24 53.333-53.333v-213.334h106.667v213.334c0 88.213-71.787 160-160 160H160c-88.213 0-160-71.787-160-160V427c0-88.213 71.787-160 160-160Zm357.706 442.293 320 320c20.8 20.8 20.8 54.614 0 75.414l-320 320-75.413-75.414 228.907-228.906H906.613V1013.72h831.254L1508.96 784.707l75.413-75.414Zm-357.706-335.626H160c-29.44 0-53.333 24-53.333 53.333v160H1280V427c0-29.333-23.893-53.333-53.333-53.333Z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                        <span class="screenreader-only">Links to an external site.</span></span></a>.&nbsp;</p>
+            <p>For a tip on how to use the <strong>charAt()</strong> to count the number of occurrences of a character,
+                take a look at <a href="https://hills.ccsf.edu/~cdasilva/cnit133/objex3.html" target="_blank"
+                    rel="noreferrer noopener"><span>this page coded by the instructor</span></p>
+            <a href="part2.html"><b>Part2 Solution</b></a>
+
+            <!-- Part3 -->
+            <h3>Part3</h3>
+            <ul>
+                <li>Create a webpage with:
+                    <ul>
+                        <li>a heading of your choice</li>
+                        <li>an input box for the user to type the phone number</li>
+                        <li>3 input boxes where you will present the result/output (area code, the first 3 digits of the
+                            phone number, the last 4 digits of the phone number)</li>
+                        <li>a button to start the process</li>
+                        <li>a button to clear the form</li>
+                        <li>an element such as div or paragraph to present any error message you need</li>
+                        <li>a hyper link to go back to the main page of Homework 6</li>
+                    </ul>
+                </li>
+                <li>You will create a script to resolve the following:
+                    <ul>
+                        <li>The user needs to type the telephone number, as a string, in this format (999) 999-9999.
+                        </li>
+                        <li>You should use the<span
+                                class="Apple-converted-space">&nbsp;</span><strong>String</strong><span
+                                class="Apple-converted-space">&nbsp;</span>method<span
+                                class="Apple-converted-space">&nbsp;</span><strong>split</strong><span
+                                class="Apple-converted-space"> or the <strong>match </strong>group related to regex
+                            </span>to extract the area code; the first 3 digits of the phone number; and the last 4
+                            digits of the phone number</li>
+                        <li>You will display, in the 3 input boxes (<strong>that are read-only</strong>) you provided in
+                            the form, those separated numbers - <strong>ONLY THE NUMBERS, there should be no
+                                parentheses, no hyphen</strong>! This means that the phone number was typed in the
+                            correct requested format and then, in this case, the area you would be using for error
+                            message should be <strong>CLEARED</strong>!!!</li>
+                        <li>If the user does not type the phone number in the exact format requested, you should display
+                            in the other element (div or paragraph) an error message that clarifies to the user how he
+                            should type the phone number and then, <strong>NONE OF THE 3 READ-ONLY INPUT BOXES SHOULD
+                                PRESENT A RESULT</strong></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Extra Credit for Part 3s</h3>
+            <p>To help the user type the phone number and then the number being typed will adjust automatically to the
+                format you are requiring, <span style="background-color: #fff060;">I would </span><span
+                    style="background-color: #ffff00;"><strong>STRONGLY suggest that you should use the jQuery mask for
+                        input</strong><strong>.</strong></span>&nbsp;</p>
+            <p>You will get this extra credit if you use the jQuery Mask in part 3. <br><span
+                    style="background-color: #fff060;"><strong>TIP:</strong></span> Check this <a
+                    href="https://dobsondev.com/2017/04/14/using-jquery-mask-to-mask-form-input/" target="_blank"
+                    rel="noreferrer noopener"><span>tutorial on how to use jQuery Mask for an input element</span></p>
+            <a href="part3.html"><b>Part3 Solution</b></a>
+        </div>
+
+    </article>
+</body>
+
+</html>
