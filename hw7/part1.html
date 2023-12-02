@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hw7.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 7 for JavaScript, jQuery, AJAX course at CCSF">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.js"></script>
+    <script async src="../scripts/hw7/hw7.js"></script>
+    <title>CNIT 133 Homework</title>
+</head>
+
+<body>
+    <header>
+        <h1>CNIT 133 Homework 7 - Object Model and Event Model</h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw7.html" class="nav-btn">HW7</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <article>
+        <div class="container">
+            <h2 class="text-center">Part1: Customize CSS Properties</h2>
+            <form>
+                <div class="flex-box">
+                    <div class="flex-item">
+                        <p>Select background color:</p>
+                        <input type="radio" id="purple" name="background-color" value="#ad76b1">
+                        <label for="purple">Purple</label><br>
+                        <input type="radio" id="red" name="background-color" value="#ff6961">
+                        <label for="red">Red</label><br>
+                        <input type="radio" id="green" name="background-color" value="#559e83">
+                        <label for="green">Green</label>
+
+                    </div>
+                    <div class="flex-item">
+                        <p> Select font style:</p>
+                        <input type="checkbox" id="underline" name="font-style" value="underline">
+                        <label for="underline"> Underline</label><br>
+                        <input type="checkbox" id="bold" name="font-style" value="bold">
+                        <label for="bold"> Bold</label><br>
+                        <input type="checkbox" id="italic" name="font-style" value="italic">
+                        <label for="italic"> Italic</label><br><br>
+                    </div>
+                    <div class="flex-item">
+                        <br>
+                        <label for="font-size">Select font size:</label><br><br>
+                        <select name="font-size" id="font-size" onchange="changeFontSize()">
+                            <option value="">Select font size</option>
+                            <option value="0.75rem">text-xs</option>
+                            <option value="0.875rem">text-sm</option>
+                            <option value="1rem">text-base</option>
+                            <option value="1.125rem">text-lg</option>
+                            <option value="1.25rem">text-xl</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <div id="content-area">
+                <h3 class="text-center">Psalms 23</h3>
+                <div class="flex-box">
+                    <div class="flex-item">
+                        <p>1. The Lord is my shepherd; I shall not want.</p>
+                        <p>2. He makes me lie down in green pastures, He leads me beside still waters</p>
+                        <p>3. He restores my soul.
+                            He leads me in paths of righteousness
+                            for his name's sake.</p>
+                            <p>4. Even though I walk through the valley of the shadow of death,
+                                I will fear no evil,
+                                for you are with me;
+                                your rod and your staff,
+                                they comfort me.</p>
+                    </div>
+        
+                    <div class="flex-item">
+                       
+                        <p>5. You prepare a table before me
+                            in the presence of my enemies;
+                            you anoint my head with oil;
+                            my cup overflows.</p>
+                        <p>6. Surely goodness and mercy shall follow me
+                            all the days of my life,
+                            and I shall dwell in the house of the Lord
+                            forever.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </article>
+</body>
+
+</html>
