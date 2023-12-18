@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hw8.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homework 8 for JavaScript, jQuery, AJAX course at CCSF">
+    <script async src="../scripts/hw8/hw8.js"></script>
+    <title>CNIT 133 Homework</title>
+</head>
+
+<body>
+    <header>
+        <h1>Homework8 - AJAX Application</h1>
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <ul>
+                <li>
+                    <div class="btn-section"><a href="../hw1.html" class="nav-btn">Home</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="hw8.html" class="nav-btn">HW8</a></div>
+                </li>
+                <!-- <li>
+                    <div class="btn-section"><a href="part1.html" class="nav-btn">Part1</a></div>
+                </li>
+                <li>
+                    <div class="btn-section"><a href="part2.html" class="nav-btn">Part2</a></div>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    <article class="hw8">
+        <div class="container">
+            <button type="button" onclick="loadDoc()">Get CD collection</button>
+            <br><br>
+            <table id="demo"></table>
+            <!-- Explanation of AJAX -->
+            <h2>Explanation of AJAX</h2>
+            <p>First, it created a new XMLHttpRequest Object.
+                Then, it created a funciton that will display the data in table format once the response from the server
+                is ready.
+                Called XMLHttpRequest Object's open("GET", "cd_catalog.xml") method to initialize the request to get the
+                cd_catalog.xml.
+                XMLHttpRequest Object send the request to the server.
+                Once the server received the get request and sent back the requested data-cd_catalog.xml to the Object.
+                The Object received the cd_catalog.xml, processed it and displayed the data on the page.</p>
+            <!-- REST API -->
+            <h2>Spoonacular API</h2>
+            <p>Since the Covid, lots of people start to cook at home and eat healthier. I want to introduce the Spoonacular API
+                that provides food and recipe data. This API has 
+                2,600+ Ingredients, 5,000+ Recipes, 600K+ Products, and 115K+ Menu Items, building an app based on all
+                the data they provided that allows users to understand the relationships between ingredients, recipes,
+                nutrition, allergens, and more.This API offers a free plan with 150 points/day calls and 1 request/s and
+                offers other paid plans according to the customer's needs. </p>
+            <p>Here is the link to the <a href="https://spoonacular.com/food-api/docs" target="_blank">Spoonacular API
+                    Documentation</a> Page.</p>
+            <form>
+                <label for="ingredients">Search Recipes by Ingredients: </label>
+                <input type="text" id="ingredients" name="ingredients" placeholder="eg:apple">
+                <input type="button" value="Search" id="search">
+                <div id="recipes"></div>
+            </form>
+        </div>
+
+    </article>
+</body>
+
+</html>
